@@ -49,7 +49,7 @@ async function installPlugin(item) {
 
 async function uninstallPlugin(item) {
   delete routers[item.name];
-  current.splice(current.indexOf(item));
+  current.splice(current.indexOf(item), 1);
 }
 
 function watchPlugins() {
